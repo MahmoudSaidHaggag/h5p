@@ -1,5 +1,5 @@
 {
-    "name": "exatech-group/laravel-h5p",
+    "name": "haggag/laravel-h5p",
     "description": "H5P Plugin for laravel platform",
     "type": "library",
     "authors": [
@@ -9,8 +9,6 @@
         }
     ],
     "license": "MIT",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Djoudi\\LaravelH5p\\": "src/LaravelH5p"
