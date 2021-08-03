@@ -9,6 +9,7 @@
         }
     ],
     "license": "MIT",
+	"minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Djoudi\\LaravelH5p\\": "src/LaravelH5p"
