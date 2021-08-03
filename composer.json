@@ -1,5 +1,5 @@
 {
-    "name": "haggag/laravel-h5p",
+    "name": "haggag/h5p",
     "description": "H5P Plugin for laravel platform",
     "type": "library",
     "authors": [
@@ -17,9 +17,9 @@
         }
     },
     "require": {
-        "php": "^7.1",
-        "laravel/framework": "^5.8",
-        "laravelcollective/html": "^5.8",
+        "php": "^7.2",
+        "laravel/framework": "^7.*",
+        "laravelcollective/html": "^7.0",
         "twbs/bootstrap-sass": "@stable",
         "h5p/h5p-core": "^1.24",
         "h5p/h5p-editor": "^1.24",
@@ -27,7 +27,7 @@
     },
     "require-dev": {
         "fzaninotto/faker": "^1.8",
-        "mockery/mockery": "^1.2",
+        "mockery/mockery": "1.2.*",
         "phpunit/phpunit": "~7.0",
         "xethron/migrations-generator": "^2.0"
     },
