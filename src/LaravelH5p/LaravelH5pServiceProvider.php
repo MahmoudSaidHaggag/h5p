@@ -54,7 +54,9 @@ class LaravelH5pServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function boot(\Illuminate\Routing\Router $router)
     {
-        $this->loadRoutesFrom(__DIR__.'/../../routes/laravel-h5p.php');
+        if (config('laravel-h5p.load_routes')) {
+            $this->loadRoutesFrom(__DIR__ . '/../../routes/laravel-h5p.php');
+        }
 
         // config
         $this->publishes([

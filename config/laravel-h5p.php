@@ -19,6 +19,7 @@ return [
     'views'           => 'h5p', // h5p view path
     'layout'          => 'h5p.layouts.h5p', // layoute path
     'use_router'      => 'ALL', // ALL,EXPORT,EDITOR
+	'load_routes'     => true,
 
     'H5P_DISABLE_AGGREGATION' => false,
 
