@@ -15,12 +15,12 @@
         }
     },
     "require": {
-        "php": "^7.1|^8.0",
-        "laravel/framework": "^7.0|^8.0",
+        "php": "^7.1|^8.0|^9.0||^10.0",
+        "laravel/framework": "^7.0|^8.0|^9.0||^10.0",
         "twbs/bootstrap-sass": "@stable",
         "h5p/h5p-core": "^1.24",
         "h5p/h5p-editor": "^1.24",
-        "guzzlehttp/guzzle": "^6.2|^7.0"
+        "guzzlehttp/guzzle": "^6.2|^7.0|^8.0|^9.0"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.8",
