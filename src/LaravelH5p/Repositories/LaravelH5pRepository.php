@@ -116,7 +116,8 @@ class LaravelH5pRepository implements H5PFrameworkInterface
      */
     public function getLibraryFileUrl($libraryFolderName, $fileName)
     {
-        return url('vendor/h5p/h5p-core/'.$libraryFolderName.'/'.$fileName);
+        //Haggag
+        return url('vendor/h5p/libraries/'.$libraryFolderName.'/'.$fileName);
     }
 
     /**

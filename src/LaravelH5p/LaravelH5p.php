@@ -32,6 +32,7 @@ use H5PStorage;
 use H5PValidator;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 //H5P_Plugin
 class LaravelH5p
@@ -279,7 +280,8 @@ class LaravelH5p
         $settings = self::get_core_settings();
 
         $settings['editor'] = [
-            'filesPath' => self::get_h5p_storage('/editor'),
+            // 'filesPath' => self::get_h5p_storage('/editor'),
+            'filesPath' => self::get_h5p_storage($content? ('/content/' . $content['id']) : '/editor'),//Haggag
             'fileIcon'  => [
                 'path'   => self::get_h5peditor_url('/images/binary-file.png'),
                 'width'  => 50,
