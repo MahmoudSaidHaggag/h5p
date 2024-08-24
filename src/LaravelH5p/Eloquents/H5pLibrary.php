@@ -3,7 +3,9 @@
 namespace Djoudi\LaravelH5p\Eloquents;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Lang;
 
 class H5pLibrary extends Model
 {
@@ -52,5 +54,15 @@ class H5pLibrary extends Model
         $usage = $interface->getLibraryUsage($this->id, $interface->getNumNotFiltered() ? true : false);
 
         return intval($usage['libraries']);
+    }
+
+    public function getTitleAttribute($value)
+    {
+        $libKey = Arr::last(explode('.', $this->name));
+        if (Lang::has('laravel-h5p.libraries.'. $libKey)) {
+            return trans('laravel-h5p.libraries.'. $libKey);
+        }
+
+        return $value;
     }
 }
